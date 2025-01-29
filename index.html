@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Timezones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock-container">
+        <div id="inner-container">
+            <div id="user-time"></div>
+            <h1>World Timezones</h1>
+
+            <select id="location-select">
+                <option value="paris">Paris</option>
+                <option value="sydney">Sydney</option>
+                <option value="new-york">New York</option>
+                <option value="south-africa">South Africa</option>
+            </select>
+
+            <div id="cities-container">
+                <div class="city hidden" id="paris">
+                    <img src="https://flagcdn.com/w40/fr.png" alt="France Flag">
+                    <div>
+                        <h2>Paris</h2>
+                        <div class="date-time">
+                            <span class="date"></span> |
+                            <span class="time"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city hidden" id="sydney">
+                    <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag">
+                    <div>
+                        <h2>Sydney</h2>
+                        <div class="date-time">
+                            <span class="date"></span> |
+                            <span class="time"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city hidden" id="new-york">
+                    <img src="https://flagcdn.com/w40/us.png" alt="USA Flag">
+                    <div>
+                        <h2>New York</h2>
+                        <div class="date-time">
+                            <span class="date"></span> |
+                            <span class="time"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="city hidden" id="south-africa">
+                    <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag">
+                    <div>
+                        <h2>South Africa</h2>
+                        <div class="date-time">
+                            <span class="date"></span> |
+                            <span class="time"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container">
+        <footer>
+            This project was coded by 
+            <strong>
+                <a href="https://github.com/Ntombifuthi-Mashinini" target="_blank">
+                    Ntombifuthi Mashinini
+                </a>
+            </strong> 
+            and is open-sourced on GitHub 
+            <a href="https://github.com/Ntombifuthi-Mashinini/WorldTimeZones.git/" target="_blank">
+                here
+            </a>. 
+            It is hosted on 
+            <a href="https://multizone-tracker.netlify.app" target="_blank">
+                Netlify
+            </a>.
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
